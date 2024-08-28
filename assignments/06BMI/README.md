@@ -21,22 +21,22 @@ Recuerda, la línea `# Escribe el código adecuado para completar el programa` e
 
 Escribe un programa que calcule el **IMC** (Índice de Masa Corporal) de una persona, el cual se utiliza para determinar si la proporción de peso y altura es adecuada. El IMC se puede calcular utilizando la siguiente fórmula:
 
-indice = peso / altura^2
+$imc = \dfrac{peso}{altura^2}$
 
 Donde el peso debe darse en kilogramos y la altura en metros. La siguiente tabla muestra cómo se clasifican los diferentes rangos de índice:
 
 | Rango de índice |  Descripción  |
-| :-------------: |:-------------:|
-|índice < 20      | PESO BAJO     |
-|20 <= índice < 25| NORMAL        |
-|25 <= índice < 30| SOBREPESO     |
-|30 <= índice < 40| OBESIDAD      |
-|índice >= 40     | OBESIDAD MORBIDA|
+|:---------------:|:-------------:|
+|$imc$ < 20       | PESO BAJO     |
+|20 <= $bmi$ < 25 | NORMAL        |
+|25 <= $bmi$ < 30 | SOBREPESO     |
+|30 <= $bmi$ < 40 | OBESIDAD      |
+|40 <= $bmi$      | OBESIDAD MORBIDA|
 
-**Entradas**
+**Entradas:**  
 Dos números **flotantes** (peso y altura) uno en cada renglón y recibidos en este orden.
 
-**Salidas**
+**Salidas:**  
 Un **string** correspondiente a la descripción del índice de masa corporal, tal como se ve en la tabla, todo en mayúsculas.
 Debes de verificar que tanto el peso como la altura sean mayores a 0, en caso de que alguno sea 0 o menor, se debe mandar el siguiente mensaje de error: *Revisa tus datos, alguno de ellos es erróneo*.
 
@@ -63,5 +63,5 @@ este programa, pero es una buena práctica incluirla y quedará más
 claro para que sirve en los siguientes ejercicios.
 
 Una vez que termines tu actividad y la hayas probado con
-`python -m pytest --tb=short -v`,
+`pytest assignments/06BMI --tb=short -v`,
 subela a tu repositorio en GitHub, con el proceso de commit + push.
